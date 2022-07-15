@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    /* Read input as specified in the question.
+	 * Print output as specified in the question.
+	 */
+    int count=0;
+    int chars=0;
+    int digits=0;
+    int spaces=0;
+    char c;
+    while(c!='$'){
+        c=cin.get();
+    if(int(c)>=48 && int(c)<=57){
+        digits++;
+    }
+    else if(int(c)>=97 && int(c)<=122){
+        chars++;
+    }
+    else{
+        spaces++;
+    }
+}
+    cout<<chars<<' '<<digits<<' '<<spaces-1;
+    }
