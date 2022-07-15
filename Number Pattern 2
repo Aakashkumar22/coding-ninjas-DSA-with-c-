@@ -1,0 +1,61 @@
+Number Pattern 2
+
+Print the following pattern
+Pattern for N = 4
+...1
+..23
+.345
+456
+
+The dots represent spaces.
+
+
+
+Input Format :
+N (Total no. of rows)
+Output Format :
+Pattern in N lines
+Sample Input :
+5
+Sample Output :
+
+
+The dots represent spaces.
+
+solution:
+
+
+#include<iostream>
+using namespace std;
+
+
+int main(){
+    int i=0;
+    
+   
+    int n;
+    cin>>n;
+    while(i<=n){ // for printing space
+        int k=1;
+        while(k<=n-i){
+            cout<<" ";
+            k=k+1;
+        }
+        int j=i;
+        int count=0;
+       
+       
+        while(count<i){
+            cout<<j;
+            j=j+1;
+            count=count+1;
+        }
+       cout<<endl;
+        i=i+1;
+    }
+
+       /*  Read input as specified in the question.
+	* Print output as specified in the question.
+	*/
+  
+}
