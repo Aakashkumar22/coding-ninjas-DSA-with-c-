@@ -1,0 +1,88 @@
+Code : Diamond of stars
+Send Feedback
+Print the following pattern for the given number of rows.
+Note: N is always odd.
+
+
+Pattern for N = 5
+
+
+
+The dots represent spaces.
+
+
+
+Input format :
+N (Total no. of rows and can only be odd)
+Output format :
+Pattern in N lines
+Constraints :
+1 <= N <= 49
+Sample Input 1:
+5
+Sample Output 1:
+  *
+ ***
+*****
+ ***
+  *
+Sample Input 2:
+3
+Sample Output 2:
+  *
+ ***
+  *
+  
+  
+  
+  
+solution:
+
+#include<iostream>
+using namespace std;
+
+
+int main() {
+    
+    /*  Read input as specified in the question.
+     * Print output as specified in the question.
+     */
+    
+    int i=1;
+    int n;
+    cin>>n;
+    int n1=(n+1)/2;
+    int n2=n/2;
+    while(i<=n1){
+        int k=1;
+        while(k<=n1-i){
+            cout<<" ";
+            k++;
+        }
+        int j=1;
+        while(j<=2*i-1){
+            cout<<"*";
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }
+    int m=n2;
+    while(m>=1){
+        int l=1;
+        while(l<=n2-m+1){
+            cout<<" ";
+            l++;
+        }
+        int s=1;
+        while(s<=2*m-1){
+            cout<<"*";
+            s++;
+        }
+        cout<<endl;
+        m--;
+    }
+}
+  
+  
+  
